@@ -66,3 +66,23 @@ child_process 的增强
 
 [NPM 地址](https://www.npmjs.com/package/through2)
 [Github 地址](https://github.com/rvagg/through2)
+
+## Errors
+
+### error-ex
+
+![NPM](https://nodei.co/npm/error-ex.png?downloads=true&downloadRank=true)](https://nodei.co/npm/error-ex/)
+
+可以通过它创建简单的子类和自定义新的错误类型
+
+[NPM 地址](https://www.npmjs.com/package/error-ex)
+[Github 地址](https://github.com/qix-/node-error-ex)
+
+### pretty-error
+
+![NPM](https://nodei.co/npm/pretty-error.png?downloads=true&downloadRank=true)](https://nodei.co/npm/pretty-error/)
+
+美化错误输出
+
+[NPM 地址](https://www.npmjs.com/package/pretty-error)
+[Github 地址](https://github.com/AriaMinaei/pretty-error)
