@@ -73,6 +73,17 @@
 
 [Github 地址](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
 
+### optimize-css-assets-webpack-plugin
+![Downloads](https://img.shields.io/npm/dm/optimize-css-assets-webpack-plugin.svg)
+
+优化，最小化 css 资源文件，使用 cssnano。使用 extract-text 插件只是将 css 文本提取到 css 文件中，它并没有做更多的优化。
+
+安装：`npm i -D optimize-css-assets-webpack-plugin`
+
+[用法](https://github.com/NMFR/optimize-css-assets-webpack-plugin#configuration)
+
+[Github 地址](https://github.com/NMFR/optimize-css-assets-webpack-plugin)
+
 ### prerender-spa-plugin
 ![Downloads](https://img.shields.io/npm/dm/prerender-spa-plugin.svg)
 
@@ -84,13 +95,64 @@
 
 [Github 地址](https://github.com/chrisvfritz/prerender-spa-plugin)
 
+## OccurrenceOrderPlugin（默认启用）
+
+按照模块和块发生的次数来赋给它们 id，可以得到更短的 id，来减小整个文件的大小。
+
+[介绍](https://github.com/webpack/docs/wiki/list-of-plugins#occurrenceorderplugin)
+[默认加载](https://www.webpackjs.com/guides/migrating/#-occurrenceorderplugin)
+
+## DedupePlugin（移除）
+
+去除重复的文件。
+
+[介绍](https://github.com/webpack/docs/wiki/list-of-plugins#optimize)
+[去除](https://www.webpackjs.com/guides/migrating/#-dedupeplugin)
+
+---
+
+## 构建时优化插件
+
+### DllPlugin 和 DllReferencePlugin
+
+用于加快构建速度。
+
+[用法](https://webpack.js.org/plugins/dll-plugin/#dllplugin)
+
+---
+
+## 开发用插件
+
+### HotModuleReplacementPlugin
+
+在开发服务器中开启模块热替换。
+
+[介绍](https://github.com/webpack/docs/wiki/list-of-plugins#hotmodulereplacementplugin)
+[热替换](https://webpack.js.org/guides/hot-module-replacement/)
+[API](https://github.com/webpack/docs/wiki/hot-module-replacement)
+
+### NoEmitOnErrorsPlugin
+
+如果使用了这个插件，当编译时发生错误，webpack 会直接跳过 emit 阶段。
+
+[介绍](https://webpack.js.org/plugins/no-emit-on-errors-plugin/)
+
+### FriendlyErrorsPlugin
+![Downloads](https://img.shields.io/npm/dm/friendly-errors-webpack-plugin.svg)
+
+使错误的输出更友好，提供更好的开发体验。
+
+安装：`npm i -D friendly-errors-webpack-plugin`
+
+[用法](https://github.com/geowarin/friendly-errors-webpack-plugin#basic-usage)
+
+[Github 地址](https://github.com/geowarin/friendly-errors-webpack-plugin)
 
 ---
 
 ## 统计插件
 
 ### webpack-bundle-analyzer
-![Coverage Status]()
 ![Downloads](https://img.shields.io/npm/dm/webpack-bundle-analyzer.svg)
 
 用于查看在输出的包中，每个依赖占用的大小。
